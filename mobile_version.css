@@ -9,26 +9,31 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-.books {
+.book-image {
   max-width: 200px;
 }
 
-.games,
-.crafts {
+.game-image,
+.craft-image {
   max-width: 300px;
 }
 
-.flex {
+.flex-row {
   display: flex;
+  flex-direction: row;
 }
 
-.section-container {
+.flex-column {
+  display: flex;
   flex-direction: column;
+}
+
+.content-section {
   padding: 5%;
 }
 
-.space-between {
-  justify-content: space-between;
+.space-around {
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -41,7 +46,7 @@ nav {
   width: 100%;
 }
 
-nav>div {
+nav > div {
   padding: 0% 5%;
 }
 
@@ -49,7 +54,7 @@ nav img {
   height: 30px;
 }
 
-#cart {
+#shopping-cart {
   font-weight: bold;
   align-items: center;
 }
@@ -59,10 +64,10 @@ header {
   width: 100%;
   background-image: url("./assets/kw-background.png");
   background-size: 100% 100%;
-  color: white;
+  color: black;
 }
 
-.header-text {
+.header-content {
   flex-direction: column;
   max-height: 100%;
   max-width: 20%;
@@ -78,11 +83,11 @@ header h5 {
   margin-top: 20px;
 }
 
-.section {
+.category-section {
   margin: 4% 0%;
 }
 
-.button {
+.add-button {
   cursor: pointer;
   background-color: #6095ff;
   color: white;
@@ -90,18 +95,17 @@ header h5 {
   border-radius: 4px;
 }
 
-.buy img {
+.purchase-info img {
   width: 20px;
   padding-left: 5px;
 }
 
-.buy {
+.purchase-info {
   margin-top: 15px;
   padding-bottom: 50px;
 }
 
 footer {
-  /* max-height: 300px; */
   background-image: url("http://i1.faceprep.in/prograd-junior/footer-bg.png");
   background-size: 100% 100%;
   color: white;
@@ -114,7 +118,7 @@ footer img {
   border-radius: 50%;
 }
 
-#details {
+#contact-info {
   flex-direction: column;
   text-align: right;
 }
@@ -134,7 +138,7 @@ h6 {
   font-size: 17px;
 }
 
-.buy p {
+.purchase-info p {
   font-weight: bold;
   font-size: 20px;
 }
@@ -144,7 +148,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.container {
+.items-container {
   flex-wrap: wrap;
 }
 
@@ -163,7 +167,7 @@ h2 {
     font-size: 15px;
   }
 
-  .header-text {
+  .header-content {
     padding: 0% 60% 5% 5%;
   }
 
@@ -171,7 +175,7 @@ h2 {
     text-align: center;
   }
 
-  .container {
+  .items-container {
     justify-content: center;
   }
 }
